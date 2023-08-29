@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+
+*
+{
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    background: black;
+    text-align: center;
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.menu-bar i
+{
+    margin-right:5px;
+    margin-bottom:0px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius:6px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+
+    border-radius: 0;
+    text-align: left;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    padding:5%;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    position:absolute;
+    top:700px;
+
+}
+.search-bar{
+    width:100%;
+    max-width: 700px;
+    background:rgba(255,255,255,0.2);
+    display:flex;
+    align-items:center;
+    border-radius:60px;
+    padding:10px 20px;
+    backdrop-filter:blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex:1;
+    border:0;
+    outline:none;
+    padding: 24px 20px;
+    font-size:20px;
+    color:white;
+}
+
+input{
+    color:white;
+}
+
+.search-bar button img{
+    width:25px;
+}
+.search-barbutton{
+    border: 0;
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    cursor:pointer;
+}
+h1{
+    font-size:60px;
+    color:white;
+}
+
+.pic1{
+    margin-right:180px;
+}
+.pic2{
+    margin-right: 120px;
+}
+.pic3{
+    margin-left:50px;
+}
+.pic1,.pic2,.pic3{
+    margin-bottom:110px;
+
+}
+.pic1:hover,.pic2:hover,.pic3:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+
+}
